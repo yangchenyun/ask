@@ -32,7 +32,8 @@
     "node": ">= 0.6.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "slides": "pandoc -s --webtex -i -t slidy SLIDES -o slides.html"
   },
   "dependencies": {
     "mongoskin": "*",
