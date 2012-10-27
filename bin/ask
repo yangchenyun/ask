@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-require('../lib/ask').start();
+require('../lib/ask').start()
