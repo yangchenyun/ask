@@ -16,8 +16,8 @@ There comes `ask`, you could ask it for commands:
     ask query random number
     [1]: strings /dev/urandom | grep -o '[:alnum:]]' | head -n 30 | tr -d '\n'; echo
       Generate a random password 30 characters long
-    [2]: echo $[RANDOM%X+1]
-      Random Number Between 1 And X
+    [2]: Random Number Between 1 And X
+      echo $[RANDOM%X+1]
 
 You could paste the commands right in the terminal: 
 
@@ -28,6 +28,7 @@ You could share more commands right from terminal with your `$EDITOR`:
     
     ask add
 
+## Details
 More useful options are:
 
     $ ask --help
@@ -43,3 +44,18 @@ More useful options are:
       --local         query local database
       --remote        query remote database
       --desc          add description right from terminal
+
+## RoadMap
+On version 1.0
+- develop a local storage engine
+- implement local `ask add`, `ask exec <id>`, `ask query 'grep'` 
+- use your `$EDITOR` to add commands to your local storage engine
+- build a server model backed by postgreSQL
+- build a server API interface
+
+## How to Contribute
+We follow the [`npm` code styles](https://npmjs.org/doc/npm.html).
+
+## Contributors
+- yangchenyun <yangchenyun@gmail.com>
+- kuno <neokuno@gmail.com>
