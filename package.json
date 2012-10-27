@@ -1,44 +1,49 @@
 {
-    "name": "ask",
-    "description": "community-generated command line master in terminal.",
-    "version": "0.0.1",
-    "homepage": "",
-    "author": {
-          "name": "yangchenyun",
-          "email": "yangchenyun@gmail.com",
-          "url": "yangchenyun.com"
-    },
-    "contributors": [
-      {
-        "name": "kuno",
-        "email": "neokuno@gmail.com"
-      }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/yangchenyun/ask"
-    },
-    "bugs": {
-        "url": ""
-    },
-    "licenses": [
-        {
-        "type": "MIT",
-        "url": "/blob/master/LICENSE-MIT"
+  "name": "ask",
+  "description": "community-generated command line master in terminal.",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": {
+    "name": "yangchenyun",
+    "email": "yangchenyun@gmail.com",
+    "url": "yangchenyun.com"
+  },
+  "contributors": [
+    {
+      "name": "kuno",
+      "email": "neokuno@gmail.com"
     }
-    ],
-    "main": "lib/ask",
-    "engines": {
-        "node": ">= 0.6.0"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "dependencies": {
-        "mongoskin": "*"
-    },
-    "devDependencies": {
-        "grunt": "~0.3.17"
-    },
-    "keywords": ["command", "cli", "unix"]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangchenyun/ask"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/ask",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "mongoskin": "*",
+    "underscore": "~1.4.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "keywords": [
+    "command",
+    "cli",
+    "unix"
+  ]
 }
