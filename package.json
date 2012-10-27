@@ -1,17 +1,30 @@
 {
-  "name": "ask",
-  "description": "community-generated command line master in terminal.",
-  "version": "0.0.1",
-  "homepage": "",
-  "author": {
-    "name": "yangchenyun",
-    "email": "yangchenyun@gmail.com",
-    "url": "yangchenyun.com"
-  },
-  "contributors": [
-    {
-      "name": "kuno",
-      "email": "neokuno@gmail.com"
+    "name": "ask",
+    "description": "community-generated command line master in terminal.",
+    "version": "0.0.1",
+    "homepage": "",
+    "author": {
+        "name": "yangchenyun",
+        "email": "yangchenyun@gmail.com",
+        "url": "yangchenyun.com"
+    },
+    "contributors": [
+        {
+        "name": "kuno",
+        "email": "neokuno@gmail.com"
+    }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yangchenyun/ask"
+    },
+    "bugs": {
+        "url": ""
+    },
+    "licenses": [
+        {
+        "type": "MIT",
+        "url": "/blob/master/LICENSE-MIT"
     }
     ],
     "main": "lib/ask",
@@ -22,12 +35,17 @@
         "test": "grunt test"
     },
     "dependencies": {
-        "mongoskin": "*"
+        "mongoskin": "*",
+        "underscore": "~1.4.2",
+        "request": "~2.11.4",
+        "flatiron": "~0.2.9"
     },
     "devDependencies": {
-        "mocha": "~1.6.0",
-        "should": "~1.2.0",
         "grunt": "~0.3.17"
     },
-    "keywords": ["command", "cli", "unix"]
+    "keywords": [
+        "command",
+        "cli",
+        "unix"
+    ]
 }
