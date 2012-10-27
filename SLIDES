@@ -1,0 +1,45 @@
+% Ask - community-based command line kofu master at hand
+% Steven & Kuno
+% Oct 27, 2012
+
+# Frustrating Command Line Kofu Searching Experience
+- Step 1: need some commands
+- Step 2: google / duckduckgo / wiki to find the some probably broken command
+- Step 3: copy and paste the command line
+- Step 4: tweak the command until it work, otherwise go back to step 2
+- Forget it.
+
+# What We Want To Archieve
+- Query for knowledge right from your terminal
+- Accumulate your knowledge along the time
+- Leverage the knowledge in the community, such as commandlinefu.com
+
+# what we've accomplished
+https://github.com/yangchenyun/ask/commits/master
+
+# the Cli interface - query
+remote request goes to commandlinefu.com
+
+    bin/ask query wget (--remote)
+    bin/ask query ssh sort uniq
+    bin/ask query wget (--local)
+
+# informative error messaging
+    bin/ask help
+
+    bin/ask exec <number>
+    bin/ask exec abd123
+    bin/ask exec 
+
+    bin/ask add 'ls -al | grep awesome'
+
+# colored output with ANSI color support
+    bin/ask query 'awk netcat'
+
+# Coming Next
+- implement all interfaces including `ask add`, `ask exec <id>`, `ask query 'grep' --local`
+- use your `$EDITOR` to add commands
+- a web interface to browser, search commands
+
+# What I need
+- A Web Server
