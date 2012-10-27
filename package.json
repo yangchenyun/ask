@@ -1,12 +1,19 @@
 {
     "name": "ask",
-    "description": "The best project ever.",
+    "description": "community-generated command line master in terminal.",
     "version": "0.0.1",
     "homepage": "",
     "author": {
-        "name": "yanchenyun",
-        "email": ""
+          "name": "yangchenyun",
+          "email": "yangchenyun@gmail.com",
+          "url": "yangchenyun.com"
     },
+    "contributors": [
+      {
+        "name": "kuno",
+        "email": "neokuno@gmail.com"
+      }
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/yangchenyun/ask"
@@ -33,5 +40,5 @@
     "devDependencies": {
         "grunt": "~0.3.17"
     },
-    "keywords": []
+    "keywords": ["command", "cli", "unix"]
 }
