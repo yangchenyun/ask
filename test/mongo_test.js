@@ -1,5 +1,5 @@
 var util = require('util');
-var askMongo = require('../lib/mongo.js').init('test');
+var askMongo = require('../lib/mongo.js');
 var data = require('./data.json');
 
 // // Adding tests
