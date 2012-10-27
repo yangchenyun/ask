@@ -1,0 +1,29 @@
+[{
+    "cmd":"sudo !!",
+    "desc":"Run the last cmd as root",
+    "votes":334,
+    "programs": ["sudo"],
+    "url":"http://www.cmdlinefu.com/commands/view/13/run-the-last-command-as-root"
+},
+{
+    "cmd":"python -m SimpleHTTPServer",
+    "desc":"Serve current directory tree at http://$HOSTNAME:8000/",
+    "votes":250,
+    "programs": ["python"],
+    "url":"http://www.cmdlinefu.com/commands/view/71/serve-current-directory-tree-at-httphostname8000"
+},
+{
+    "cmd":"cd -",
+    "desc":"change to the previous working directory",
+    "votes": 179,
+    "programs": ["cd"],
+    "url":"http://www.cmdlinefu.com/commands/view/51/change-to-the-previous-working-directory"
+},
+{
+    "cmd":":w sudo tee %",
+    "desc":"Save a file you edited in vim without the needed permissions",
+    "votes": 151,
+    "programs": ["sudo", "tee"],
+    "url":"http://www.cmdlinefu.com/commands/view/1204/save-a-file-you-edited-in-vim-without-the-needed-permissions"
+}
+]
