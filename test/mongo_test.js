@@ -11,7 +11,7 @@ data.forEach(function(command) {
 
 // // Query tests
 askMongo.getCommand(3, function(err, result) {
-    //console.log(result);
+    console.log(result);
 });
 
 askMongo.query('sudo', function(err, result) {
