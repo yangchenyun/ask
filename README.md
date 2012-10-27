@@ -13,7 +13,7 @@ This process sucks. How about we **keep commands where it belongs to** -- termin
 
 There comes `ask`, you could ask it for commands:
 
-    ask -q random number
+    ask query random number
     [1]: strings /dev/urandom | grep -o '[:alnum:]]' | head -n 30 | tr -d '\n'; echo
       Generate a random password 30 characters long
     [2]: echo $[RANDOM%X+1]
@@ -21,7 +21,7 @@ There comes `ask`, you could ask it for commands:
 
 You could paste the commands right in the terminal: 
 
-    ask -e 2
+    ask exec 2
     echo $[RANDOM%X+1]
 
 You could share more commands right from terminal with your `$EDITOR`:
@@ -31,10 +31,15 @@ You could share more commands right from terminal with your `$EDITOR`:
 More useful options are:
 
     $ ask --help
-    usage: ask [options] 
+    usage: ask [action] [options] 
+
+    actions:
+      add             open your $EDITOR, edit and submit your last command(!!).
+      exec <id>       exec the command with given id.
+      query <words>   query for commands containing the keywords.
+      copy <id>      paste in the command with given id.
 
     options:
-      --add, -a             open your $EDITOR, edit and submit your last command(!!).
-      --exec, -e <id>       exec the command with given id.
-      --query, -q <words>   query for commands containing the keywords.
-      --paste, -p <id>      paste in the command with given id.
+      --local         query local database
+      --remote        query remote database
+      --desc          add description right from terminal
