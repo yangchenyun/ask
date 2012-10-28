@@ -45,6 +45,22 @@ More useful options are:
       --remote        query remote database
       --desc          add description right from terminal
 
+### The structure of local cache directory(First Edition)
+Like `git`, ask cab be total local. By default, all the commands will be cached in `~/.ask` direcotry.
+
+The structure of `~/.ask` directory will similar to a local `.git` repository.
+
+```
+|-- INDEX
+`-- objects
+    |-- 0.json
+    |-- 1.json
+    |-- … … 
+    |-- info
+    `-- pack
+
+``` 
+
 ## RoadMap
 On version 1.0
 - develop a local storage engine
