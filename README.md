@@ -51,14 +51,13 @@ Like `git`, ask cab be total local. By default, all the commands will be cached 
 The structure of `~/.ask` directory will similar to a local `.git` repository.
 
 ```
-|-- INDEX
+|-- index
 `-- objects
     |-- 0.json
     |-- 1.json
     |-- … … 
     |-- info
     `-- pack
-
 ``` 
 
 ## RoadMap
