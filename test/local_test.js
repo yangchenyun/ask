@@ -1,6 +1,10 @@
 var local = require('../lib/local.js')
-var data  = require('./data.json')
+var data = require('./data.json')
+var _ = require('underscore')
 
-local.add(data[0]);
+_(data).each(function(obj, i) {
+  local.add(obj);
+})
+
 local.query('sudo python');
 local.getCommand(1);
