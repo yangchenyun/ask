@@ -31,6 +31,13 @@ module.exports = function(grunt) {
         exports: true
       }
     },
+    strip: {
+      main : {
+        files : './lib/local.js',
+        inline : true,
+        nodes : ['console']
+      }
+    },
     jsvalidate: {
       files: ['./grunt.js', './bin/*', './lib/*.js', 'test/*.js'],
     },
@@ -57,6 +64,7 @@ module.exports = function(grunt) {
   });
 
   //
+  grunt.loadNpmTasks('grunt-strip');
   grunt.loadNpmTasks('grunt-jsvalidate');
   //grunt.loadNpmTasks('grunt-jsbeautifier');
 
