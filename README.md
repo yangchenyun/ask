@@ -70,7 +70,7 @@ Add new command to local storage
     add(data) => data
     get(id) => data
     update(id, data) => data
-    delete(id) => data
+    remove(id) => data
 
 The `data` above is the data structure is defined as:
 
