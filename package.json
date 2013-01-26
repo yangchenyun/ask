@@ -39,7 +39,8 @@
     "underscore": "~1.4.2",
     "request": "~2.11.4",
     "flatiron": "~0.3.0",
-    "optimist": "*"
+    "optimist": "*",
+    "querystring": "*"
   },
   "devDependencies": {
   },
