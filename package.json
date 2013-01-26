@@ -1,30 +1,30 @@
 {
-    "name": "ask",
-    "description": "community-generated command line master in terminal.",
-    "version": "0.0.1",
-    "homepage": "",
-    "author": {
-        "name": "yangchenyun",
-        "email": "yangchenyun@gmail.com",
-        "url": "yangchenyun.com"
-    },
-    "contributors": [
-        {
-        "name": "kuno",
-        "email": "neokuno@gmail.com"
+  "name": "ask",
+  "description": "community-generated command line master in terminal.",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": {
+    "name": "yangchenyun",
+    "email": "yangchenyun@gmail.com",
+    "url": "yangchenyun.com"
+  },
+  "contributors": [
+    {
+      "name": "kuno",
+      "email": "neokuno@gmail.com"
     }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/yangchenyun/ask"
-    },
-    "bugs": {
-        "url": ""
-    },
-    "licenses": [
-        {
-        "type": "MIT",
-        "url": "/blob/master/LICENSE-MIT"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangchenyun/ask"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
     }
   ],
   "main": "lib/ask",
@@ -39,11 +39,10 @@
     "underscore": "~1.4.2",
     "request": "~2.11.4",
     "flatiron": "~0.3.0",
-    "optimist": "*",
-    "querystring": "*"
+    "optimist": "~0.3.0",
+    "sqlite-wrapper": "~0.2.1"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "keywords": [
     "command",
     "cli",
