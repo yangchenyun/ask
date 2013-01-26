@@ -28,6 +28,9 @@ You could share more commands right from terminal with your `$EDITOR`:
     
     ask add
 
+##Install
+- `curl -L https://raw.github.com/lovvvve/ask/master/install.sh | sh`
+
 ## Details
 More useful options are:
 
