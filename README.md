@@ -63,18 +63,8 @@ Add new command to local storage
 
 ## For Developers
 
-### Data Structure
-Current data structure for each command:
-
-    { 
-      id: '11621',
-      command: 'ifconfig |grep broadcast  | awk \'{print $2}\'',
-      description: "it is a test command"
-    }
-    
-
-### Server Interface
-**ask** can query command from local server or remote server, and they share the same interface:
+### Data Structure and Model Interface
+**ask** can query command from resources stored locally or remotely, and each resource models should share the same interface:
 
     query(string) => [data, data, ...]
     add(data) => data
@@ -82,8 +72,15 @@ Current data structure for each command:
     update(id, data) => data
     delete(id) => data
 
-The data above is the data structure of each command.
+The `data` above is the data structure is defined as:
 
+    { 
+      id: String,
+      command: String,
+      description: String,
+      private: Boolean
+    }
+    
 ### The structure of local cache directory(First Edition)
 Like `git`, ask cab be total local. By default, all the commands will be cached in `~/.ask` direcotry.
 
