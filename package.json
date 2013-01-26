@@ -36,8 +36,6 @@
     "slides": "pandoc -s --webtex -i -t slidy SLIDES -o slides.html"
   },
   "dependencies": {
-    "mongoskin": "*",
-    "msgpack": "~0.1.6",
     "underscore": "~1.4.2",
     "request": "~2.11.4",
     "flatiron": "~0.3.0",
