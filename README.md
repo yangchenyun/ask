@@ -69,9 +69,20 @@ Current data structure for each command:
     { 
       id: '11621',
       command: 'ifconfig |grep broadcast  | awk \'{print $2}\'',
-      description: "it is a test command",
-      keywords: ""
+      description: "it is a test command"
     }
+    
+
+### Server Interface
+**ask** can query command from local server or remote server, and they share the same interface:
+
+    query(string) => [data, data, ...]
+    add(data) => data
+    get(id) => data
+    update(id, data) => data
+    delete(id) => data
+
+The data above is the data structure of each command.
 
 ### The structure of local cache directory(First Edition)
 Like `git`, ask cab be total local. By default, all the commands will be cached in `~/.ask` direcotry.
